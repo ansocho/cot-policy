@@ -1,11 +1,369 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Under Construction</title>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="COT Policy">
+  <meta name="keywords" content="Manipulation, Semantic Correspondence">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>COT Policy</title>
+
+
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/dolly-Photoroom.png-Photoroom.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
 </head>
-<body style="font-family: sans-serif; text-align: center; padding-top: 20%;">
-  <h1>🚧 Under Construction 🚧</h1>
-  <p>This page is being built. Check back soon!</p>
+<body>
+
+
+
+
+  <section class="hero">
+<div class="hero-body">
+<div class="container is-fullhd">
+<div class="columns is-centered">
+<div class="column has-text-centered">
+  <h1 class="title is-1 publication-title">Fast Flow-based Visuomotor Policies via
+    Conditional Optimal Transport Couplings</h1>
+
+        <div class="is-size-5 publication-authors">
+          <span class="author-block">
+            <a target="_blank" href="https://tsagkas.github.io/">Andreas Sochopoulos</a><sup>1,2</sup>,
+          </span>
+          <span class="author-block">
+            <a target="_blank" href="https://tsagkas.github.io/">Nikolay Malkin</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a target="_blank" href="https://tsagkas.github.io/">Nikolaos Tsagkas</a><sup>1</sup>,
+          </span> 
+          <span class="author-block">
+            <a target="_blank" href="https://tsagkas.github.io/">Jo&atilde;o Moura</a><sup>1</sup>,
+          </span>
+          <span class="author-block">
+            <a target="_blank" href="https://tsagkas.github.io/">Michael Gienger</a><sup>2</sup>,
+          </span>
+          <span class="author-block">
+            <a target="_blank" href="https://tsagkas.github.io/">Sethu Vijayakumar</a><sup>1</sup>,
+          </span>
+          
+        </div>
+      
+        <div class="is-size-5 publication-authors">
+          <span class="author-block"><sup>1</sup>University of Edinburgh,</span>
+          <span class="author-block"><sup>2</sup>Honda Research Institute Europe,</span>
+        </div>
+      
+        <div class="column has-text-centered">
+          <div class="publication-links">
+            <!-- PDF Link. -->
+            <!-- <span class="link-block">
+              <a target="_blank" href="click2grasp.pdf"
+                 class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Paper</span>
+              </a>
+            </span> -->
+      
+          <!-- Arxiv Link. -->
+          <span class="link-block">
+            <a target="_blank" href="https://arxiv.org/abs/2505.01179"
+               class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                  <i class="fas fa-file"></i>
+              </span>
+              <span>ArXiv</span>
+            </a>
+          </span>
+      
+          <!-- Video Link. href="https://tsagkas.github.io/click2grasp/" -->
+          <span class="link-block">
+            <a target="_blank" 
+               class="external-link button is-normal is-rounded is-dark"
+               disabled>
+              <span class="icon">
+                  <i class="fab fa-youtube"></i>
+              </span>
+              <span>Video</span>
+            </a>
+          </span>
+      
+          <!-- Code Link. -->
+          <span class="link-block">
+            <a href="https://github.com/tsagkas/click2grasp"
+               class="external-link button is-normal is-rounded is-dark" disabled>
+              <span class="icon">
+                  <i class="fab fa-github"></i>
+              </span>
+              <span>Code</span>
+              </a>
+          </span>
+          </div>
+      
+      
+        </div>
+      </div>
+      </div>
+      </div>
+        </div>
+      </section>
+
+
+  </div>
+</div>
+</div>
+</div>
+  </div>
+</section>
+
+ 
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-3">Motivation</h2>
+      <div class="video-container">
+        <video autoplay muted loop controls style="max-width: 50%; height: auto;">
+          <source src="media/videos/moons_animation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Diffusion and flow matching policies have recently demonstrated remarkable performance in robotic applications by accurately capturing multimodal robot trajectory distributions. However, their computationally expensive inference, due to the numerical integration of an ODE or SDE, limits their applicability as real-time controllers for robots. We introduce a methodology that utilizes conditional Optimal Transport couplings between noise and samples to enforce straight solutions in the flow ODE for robot action generation tasks. We show that naively coupling noise and samples fails in conditional tasks and propose incorporating condition variables into the coupling process to improve few-step performance. The proposed few-step policy achieves a 4% higher success rate with a 10x speed-up compared to Diffusion Policy on a diverse set of simulation tasks. Moreover, it produces high-quality and diverse action trajectories within 1-2 steps on a set of real-world robot tasks. Our method also retains the same training complexity as Diffusion Policy and vanilla Flow Matching, in contrast to distillation-based approaches.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+  </div>
+
+</section>
+
+<section class="section">
+  <div class="video-section-set" data-video-id="1">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Real-world experiments</h2>
+        </div>
+      </div>
+
+      <div class="columns is-centered">
+        <div class="column is-four-fifths">
+          <p class="subtitle is-5">
+            COT Policy <strong>solves real-world tasks with 1–2 NFE</strong> while CFM often requires more than 10.
+          </p>
+        </div>
+      </div>
+      
+      <div class="video-container">
+        <div class="video-section">
+          <div class="video-title">CFM Policy</div>
+          <div class="video-wrapper">
+            <video class="variable-video" controls autoplay muted loop>
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="control-section">
+            <div class="slider-container">
+              <div class="slider-wrapper">
+                <span class="slider-label">NFE=</span>
+                <input type="range" min="1" max="3" value="1" step="1" class="slider nfe-slider">
+                <span class="nfe-value">1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-section">
+          <div class="video-title">COT Policy (ours)</div>
+          <div class="video-wrapper">
+            <video class="static-video" controls autoplay muted loop>
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="control-section">
+            <div class="static-label">NFE = 1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end of video-section-set -->
+</section>
+
+
+<section class="section">
+  <div class="video-section-set" data-video-id="2">
+    <div class="container is-max-desktop">      
+      <div class="video-container">
+        <div class="video-section">
+          <div class="video-title">CFM Policy</div>
+          <div class="video-wrapper">
+            <video class="variable-video" controls autoplay muted loop>
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="control-section">
+            <div class="slider-container">
+              <div class="slider-wrapper">
+                <span class="slider-label">NFE=</span>
+                <input type="range" min="1" max="4" value="1" step="1" class="slider nfe-slider">
+                <span class="nfe-value">1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-section">
+          
+          <div class="video-title">COT Policy (Ours)</div>
+          <div class="video-wrapper">
+            <video class="static-video" controls autoplay muted loop>
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="control-section">
+            <div class="static-label">NFE = 1</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end of video-section-set -->
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <p class="subtitle is-5">
+          COT Policy is able to <strong>uncover multiple modes with NFE=1</strong> and <strong>adapt to disturbances in real-time</strong>.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-half has-text-centered">
+        <div class="video-container">
+          <div class="video-section">
+        <video autoplay muted loop controls>
+          <source src="media/videos/multimodal.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <!-- <p class="mt-2">Video 1 label (optional)</p> -->
+      </div>
+    </div>
+  </div>
+      <div class="column is-half has-text-centered">
+        <div class="video-container">
+          <div class="video-section">
+        <video autoplay muted loop controls>
+          <source src="media/videos/pushT_COT_NFE=1_disturbances.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <!-- <p class="mt-2">Video 2 label (optional)</p> -->
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <p class="subtitle is-5">
+          Moreover, COT couplings result in policies that solve <strong>complex and long horizon tasks</strong> using only a few NFE.
+        </p>
+      </div>
+    </div>
+
+    <div class="columns is-centered">
+      <div class="column is-half has-text-centered">
+        <div class="video-container">
+          <div class="video-section">
+        <div class="video-title">COT Policy - NFE=2</div>
+        <video autoplay muted loop controls>
+          <source src="media/videos/drawers_COT_NFE=2_midpoint_success.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <!-- <p class="mt-2">Video 1 label (optional)</p> -->
+      </div>
+    </div>
+  </div>
+      <div class="column is-half has-text-centered">
+        <div class="video-container">
+          <div class="video-section">
+        <div class="video-title">COT Policy - NFE=5</div>
+        <video autoplay muted loop controls>
+          <source src="media/videos/zipper_COT.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <!-- <p class="mt-2">Video 2 label (optional)</p> -->
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{sochopoulos2025cot,
+      title={Fast Flow-based Visuomotor Policies via Conditional Optimal Transport Couplings},
+      author={Sochopoulos, Andreas and Malkin, Nikolay and Tsagkas, Nikolaos and Moura, Jo&atilde;o and Gienger, Michael and Vijayakumar, Sethu},
+      journal={arXiv preprint arXiv:2505.01179},
+      year={2025}
+    }</code></pre>
+  </div>
+</section>
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-centered">
+          <p>
+            Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>, <a href="https://peract.github.io/">PerAct</a>, <a href="https://voxposer.github.io/">VoxPoser</a>. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="./static/js/index.js"></script>
+
 </body>
 </html>
